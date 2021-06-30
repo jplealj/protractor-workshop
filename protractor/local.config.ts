@@ -3,10 +3,9 @@ import { reporter } from './helpers/reporter';
 
 export const config: Config = {
   framework: 'jasmine',
-  specs: ['../test/**/*.spec.js'],
+  specs: ['../test/google.spec.js'],
   SELENIUM_PROMISE_MANAGER: false,
   onPrepare: () => {
     reporter();
   },
-  getPageTimeout: 1000,
 };

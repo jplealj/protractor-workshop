@@ -3,7 +3,7 @@ import { reporter } from './helpers/reporter';
 
 export const config: Config = {
   framework: 'jasmine',
-  specs: ['../test/**/*.spec.js'],
+  specs: ['../test/google.spec.js'],
   SELENIUM_PROMISE_MANAGER: false,
   onPrepare: () => {
     reporter();
@@ -14,5 +14,4 @@ export const config: Config = {
       args: ['--headless', '--disable-gpu'],
     },
   },
-  getPageTimeout: 1000,
 };
