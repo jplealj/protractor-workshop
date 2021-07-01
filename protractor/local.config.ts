@@ -8,5 +8,8 @@ export const config: Config = {
   onPrepare: () => {
     reporter();
   },
-  getPageTimeout: 1000,
+  getPageTimeout: 3000,
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000,
+  },
 };
