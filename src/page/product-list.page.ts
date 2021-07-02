@@ -1,5 +1,5 @@
 import {
-  $, ElementFinder,
+  $, browser, ElementFinder, ExpectedConditions,
 } from 'protractor';
 
 export class ProductListPage {
@@ -10,6 +10,7 @@ export class ProductListPage {
   }
 
   public async addToCartP(): Promise<void> {
+    await browser.wait(ExpectedConditions.elementToBeClickable(this.addToCart), 3000);
     await this.addToCart.click();
   }
 }
