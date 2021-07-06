@@ -4,7 +4,7 @@ export class SummaryStepPage {
   private message: ElementFinder;
 
   constructor() {
-    this.message = $('#center_column > div > p > strong');
+    this.message = $('p.cheque-indent');
   }
 
   public async checkCompleteMessage(): Promise<string> {

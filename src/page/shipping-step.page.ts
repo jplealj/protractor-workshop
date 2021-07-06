@@ -7,7 +7,7 @@ export class ShippingStepPage {
 
   constructor() {
     this.check = $('#cgv');
-    this.proceedToCheckoutButton = $('#form > p > button > span');
+    this.proceedToCheckoutButton = $('[name="processCarrier"]');
   }
 
   public async agreeTerms(): Promise<void> {
