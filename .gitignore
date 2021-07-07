@@ -167,5 +167,7 @@ $RECYCLE.BIN/
 # Typescript
 dist
 
+#Jasmine
+/reports
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,node,visualstudiocode
