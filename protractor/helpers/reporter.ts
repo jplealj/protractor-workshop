@@ -8,9 +8,8 @@ const config = {
   merge: true,
 };
 
-jasmine.getEnv().addReporter(AwesomeReport.getReport(config));
-
 export const reporter = () => {
+  jasmine.getEnv().addReporter(AwesomeReport.getReport(config));
   jasmine.getEnv().addReporter(new SpecReporter({
     spec: {
       displayStacktrace: StacktraceOption.PRETTY,
