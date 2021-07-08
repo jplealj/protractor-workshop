@@ -18,6 +18,7 @@ describe('Buying t-shirt', () => {
       const orderSummaryPage: OrderSummaryPage = new OrderSummaryPage();
 
       await menuContentPage.goToTShirtMenu();
+      await productListPage.selectProduct('Faded Short Sleeve T-shirts');
       await productListPage.addToCartP();
       await productAddedModalPage.goToOrderSummaryMenu();
       await orderSummaryPage.goToCheckout();
