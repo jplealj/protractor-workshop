@@ -19,7 +19,10 @@ export class ProductListPage {
   }
 
   private findByProduct(productName: string): ElementFinder {
-    return this.products.filter((product:ElementFinder) => product.$('.product-name').getText().then((name: string) => name.includes(productName))).first();
+    return this.products.filter((product:ElementFinder) => product
+      .$('.product-name').getText()
+      .then((name: string) => name.includes(productName)))
+      .first();
   }
 
   public async selectProduct(productName: string): Promise<void> {
