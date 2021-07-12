@@ -12,9 +12,9 @@ export class PersonalInformationPage {
   private lastName: ElementFinder;
 
   constructor() {
-    this.button = $('[name="submit"]');
-    this.firstName = $('[name="firstname"]');
-    this.lastName = $('[name="lastname"]');
+    this.button = element(by.name('submit'));
+    this.firstName = element(by.name('firstname'));
+    this.lastName = element(by.name('lastname'));
   }
 
   public async fillForm(data: { firstName: string, lastName: string, sex: string,
